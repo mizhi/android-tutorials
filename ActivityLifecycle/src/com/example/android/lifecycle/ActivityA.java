@@ -39,7 +39,7 @@ public class ActivityA extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
-        mActivityName = getString(R.string.activity_a);
+        mActivityName = getString(R.string.activity_a_label);
         mStatusView = (TextView)findViewById(R.id.status_view_a);
         mStatusAllView = (TextView)findViewById(R.id.status_view_all_a);
         mStatusTracker.setStatus(mActivityName, getString(R.string.on_create));
@@ -105,5 +105,4 @@ public class ActivityA extends Activity {
     public void finishActivityA(View v) {
         ActivityA.this.finish();
     }
-
 }
